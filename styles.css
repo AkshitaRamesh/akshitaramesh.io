@@ -10,30 +10,216 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f0f0f0;
+  background-color: #000;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: top;
+  align-items: top;
 }
 
 .spinner {
-  border: 8px solid rgba(0, 0, 0, 0.1);
-  border-top: 8px solid #333;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.circuit-line {
+  position: absolute;
+  background-color: #00FF00;
+}
+
+.line-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  animation: growTop 1s linear infinite;
+}
+
+.line-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  animation: growBottom 1s linear infinite;
+}
+
+.line-left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 0;
+  animation: growLeft 1s linear infinite;
+}
+
+.line-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 0;
+  animation: growRight 1s linear infinite;
+}
+
+/* Extra lines */
+.line-extra1 {
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  animation: growExtra1 1s linear infinite;
+}
+
+.line-extra2 {
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 0;
+  animation: growExtra2 1s linear infinite;
+}
+
+.line-extra3 {
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  animation: growExtra3 1s linear infinite;
+}
+
+
+.line-extra4 {
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  animation: growExtra4 1s linear infinite;
+}
+
+.line-extra5 {
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  animation: growExtra5 1s linear infinite;
+}
+
+/* Extra lines */
+.line-extra6 {
+  top: 50%;
+  left: 60%;
+  height: 2px;
+  width: 0;
+  animation: growExtra6 1s linear infinite;
+}
+
+/* Extra lines */
+.line-extra7 {
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  animation: growExtra7 1s linear infinite;
+}
+
+.line-extra8 {
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  animation: growExtra 1s linear infinite;
+}
+@keyframes growTop {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes growBottom {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes growLeft {
+  0% {
+    height: 0;
+  }
+  25% {
+    height: 100%;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes growRight {
+  0% {
+    height: 0;
+  }
+  25% {
+    height: 0;
+  }
+  50% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
+}
+
+/* Extra lines animations */
+@keyframes growExtra1 {
+  0%, 25% {
+    width: 0;
+  }
+  50%, 75% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes growExtra2 {
+  0%, 25% {
+    height: 0;
+  }
+  50%, 75% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
 }
 
 p {
   margin-top: 20px;
   font-family: Arial, sans-serif;
   font-size: 18px;
-  color: #333;
+  color: #00FF00;
 }

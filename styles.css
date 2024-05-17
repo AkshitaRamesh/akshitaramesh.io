@@ -11,17 +11,7 @@ body, html {
   width: 100%;
   height: 100%;
   background-color: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: top;
-}
-
-.spinner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
+  
 }
 
 .circuit-line {
@@ -67,71 +57,153 @@ body, html {
 
 /* Extra lines */
 .line-extra1 {
-  top: 50%;
-  left: 0;
-  height: 2px;
-  width: 0;
+  top: 0%;
+  left: 10%;
+  height: 100%;
+  width: 2px;
   animation: growExtra1 1s linear infinite;
 }
 
 .line-extra2 {
-  top: 0;
-  left: 50%;
+  top: 0%;
+  left: 20%;
+  height: 100%;
   width: 2px;
-  height: 0;
-  animation: growExtra2 1s linear infinite;
+  animation: growExtra1 1s linear infinite;
 }
 
 .line-extra3 {
-  top: 50%;
-  left: 0;
-  height: 2px;
-  width: 0;
-  animation: growExtra3 1s linear infinite;
+  top: 0%;
+  left: 30%;
+  height: 100%;
+  width: 2px;
+  animation: growExtra1 1s linear infinite;
 }
 
-
 .line-extra4 {
-  top: 50%;
-  left: 0;
-  height: 2px;
-  width: 0;
-  animation: growExtra4 1s linear infinite;
+  top: 0%;
+  left: 40%;
+  height: 100%;
+  width: 2px;
+  animation: growExtra1 1s linear infinite;
 }
 
 .line-extra5 {
-  top: 50%;
-  left: 0;
-  height: 2px;
-  width: 0;
-  animation: growExtra5 1s linear infinite;
+  top: 0%;
+  left: 50%;
+  height: 100%;
+  width: 2px;
+  animation: growExtra1 1s linear infinite;
 }
 
-/* Extra lines */
+
 .line-extra6 {
-  top: 50%;
+  top: 0%;
   left: 60%;
-  height: 2px;
-  width: 0;
-  animation: growExtra6 1s linear infinite;
+  height: 100%;
+  width: 2px;
+  animation: growExtra1 1s linear infinite;
 }
 
-/* Extra lines */
+
 .line-extra7 {
-  top: 50%;
-  left: 0;
-  height: 2px;
-  width: 0;
-  animation: growExtra7 1s linear infinite;
+  top: 0%;
+  left: 70%;
+  height: 100%;
+  width: 2px;
+  animation: growExtra1 1s linear infinite;
 }
+
 
 .line-extra8 {
+  top: 0%;
+  left: 80%;
+  height: 100%;
+  width: 2px;
+  animation: growExtra1 1s linear infinite;
+}
+
+
+.line-extra9 {
+  top: 0%;
+  left: 90%;
+  height: 100%;
+  width: 2px;
+  animation: growExtra1 1s linear infinite;
+}
+
+.line-extra10 {
+  top: 10%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  animation: growExtra3 1s linear infinite;
+}
+
+.line-extra11 {
+  top: 20%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  animation: growExtra3 1s linear infinite;
+}
+
+.line-extra12 {
+  top: 30%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  animation: growExtra3 1s linear infinite;
+}
+
+.line-extra13 {
+  top: 40%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  animation: growExtra3 1s linear infinite;
+}
+
+.line-extra14 {
   top: 50%;
   left: 0;
   height: 2px;
-  width: 0;
-  animation: growExtra 1s linear infinite;
+  width: 100%;
+  animation: growExtra3 1s linear infinite;
 }
+
+.line-extra15 {
+  top: 60%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  animation: growExtra3 1s linear infinite;
+}
+
+.line-extra16 {
+  top: 70%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  animation: growExtra3 1s linear infinite;
+}
+
+.line-extra17 {
+  top: 80%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  animation: growExtra3 1s linear infinite;
+}
+
+.line-extra18 {
+  top: 90%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  animation: growExtra3 1s linear infinite;
+}
+
 @keyframes growTop {
   0% {
     width: 0;
@@ -195,13 +267,13 @@ body, html {
 /* Extra lines animations */
 @keyframes growExtra1 {
   0%, 25% {
-    width: 0;
+    height: 0;
   }
   50%, 75% {
-    width: 100%;
+    height: 100%;
   }
   100% {
-    width: 0;
+    height: 0;
   }
 }
 
@@ -216,6 +288,22 @@ body, html {
     height: 0;
   }
 }
+
+@keyframes growExtra3 {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
 
 p {
   margin-top: 20px;
